@@ -7,7 +7,7 @@ import Display from './components/Display';
 const Context = createContext();
 
 function App() {
-  const [data, setData] = useState({ rules: [], combinator: '' });
+  const [data, setData] = useState({ rules: [], combinator: 'AND' });
 
   const handleChange = (value) => {
     setData((prevData) => ({

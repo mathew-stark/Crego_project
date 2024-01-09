@@ -11,7 +11,7 @@ const ExpressionComponent = () => {
     operation: '',
     value: '',
     score: '',
-    combinator : data.combinator || 'AND',
+    combinator : data.combinator,
   });
 
   const handleInputChange = (field, value) => {
