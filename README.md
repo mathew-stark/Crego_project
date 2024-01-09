@@ -14,7 +14,7 @@ cd react-application
 
 
 ```md
-docker build -t crego_project
+docker build -t crego_project. 
 ```
 
 ```md
