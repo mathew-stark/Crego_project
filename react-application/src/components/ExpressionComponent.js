@@ -11,7 +11,7 @@ const ExpressionComponent = () => {
     operation: '',
     value: '',
     score: '',
-    combinator : '',
+    combinator : data.combinator || 'AND',
   });
 
   const handleInputChange = (field, value) => {
@@ -106,20 +106,25 @@ const ExpressionComponent = () => {
         </Button>
       </Form>
 
-      <label className="form-label mb-3">
-        Choose Combinator
-        <select
-          value={currentState.combinator}
-          onChange={(e) => {
-            handleInputChange('combinator', e.target.value);
-            handleCombinator(e.target.value)
-          }}
-          className="combinator-select"
-        >
-          <option value="AND">AND</option>
-          <option value="OR">OR</option>
-        </select>
-      </label>
+      <div className="d-flex justify-content-end">
+       <label className="form-label mb-3">
+          Choose Combinator
+          <select
+            value={currentState.combinator}
+            onChange={(e) => {
+              handleInputChange('combinator', e.target.value);
+              handleCombinator(e.target.value);
+            }}
+            className="combinator-select"
+            style={{ marginLeft: '10px' }} // Adjust the value as needed
+          >
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+          </select>
+        </label>
+      </div>
+
+
 
     </div>
   );

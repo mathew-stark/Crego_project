@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ExpressionComponent from './components/ExpressionComponent';
 import Display from './components/Display';
-import Delete from './components/Delete';
+
 
 const Context = createContext();
 
@@ -36,7 +36,7 @@ function App() {
         <div className="row">
           <div className="col-md-8">
             <ExpressionComponent />
-            <Delete />
+
           </div>
           <div className="col-md-4">
             <Display />
