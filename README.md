@@ -21,3 +21,6 @@ docker build -t crego_project .
 docker run -p 3000:3000 -d crego_project
 ```
 
+```
+Node: use localhost:3000 to access clipboard might not work when accessing through [local ip]:3000
+```
