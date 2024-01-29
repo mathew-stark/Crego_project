@@ -1,4 +1,4 @@
-# Crego project
+# frontend project
 
 Screenshot:
 
